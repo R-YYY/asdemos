@@ -40,6 +40,11 @@
             android:exported="false"
             android:theme="@style/Theme.RYDemo">
         </activity>
+        <activity
+            android:name=".scaledemo.ScaleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RYDemo">
+        </activity>
     </application>
 
 </manifest>

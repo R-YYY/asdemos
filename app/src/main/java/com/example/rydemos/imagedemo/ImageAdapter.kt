@@ -42,13 +42,13 @@ class ImageAdapter : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
         fun onBindData(data: ImageInfo, position: Int) {
             when (position) {
                 0, 4 -> {
-                    mBinding.image.scaleX = 0.5f
-                    mBinding.image.scaleY = 0.5f
+                    itemView.scaleX = 0.5f
+                    itemView.scaleY = 0.5f
                 }
 
                 1, 3 -> {
-                    mBinding.image.scaleX = 0.75f
-                    mBinding.image.scaleY = 0.75f
+                    itemView.scaleX = 0.75f
+                    itemView.scaleY = 0.75f
                 }
             }
             Glide.with(itemView).load(data.iconUrl).into(mBinding.image)

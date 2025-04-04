@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.rydemos.scaledemo.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@color/purple_700"
+        android:importantForAccessibility="no"
+        android:maxWidth="200dp"
+        android:src="@drawable/demo2">
+
+    </com.example.rydemos.scaledemo.CustomImageView>
+
+</LinearLayout>
