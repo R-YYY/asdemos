@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.rydemos.scaledemo.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@color/purple_700"
+        android:importantForAccessibility="no"
+        android:maxWidth="200dp"
+        android:src="@drawable/demo2">
+
+    </com.example.rydemos.scaledemo.CustomImageView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
+
+        <ImageView
+            android:id="@+id/origin_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:src="@color/purple_200" />
+
+        <ImageView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/frame"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+</LinearLayout>
