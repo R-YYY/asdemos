@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import com.example.rydemos.R
 import com.example.rydemos.databinding.ActivityMotionBinding
+import com.example.rydemos.util.RYLog
 
 class MotionActivity : ComponentActivity() {
     companion object {
@@ -38,16 +39,16 @@ class MotionActivity : ComponentActivity() {
         binding.testRv.addOnScrollListener(object : OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
-                Log.i(TAG, "-----------onScrollStateChanged-----------");
-                Log.i(TAG, "newState: $newState");
+                RYLog.i(TAG, "-----------onScrollStateChanged-----------");
+                RYLog.i(TAG, "newState: $newState");
             }
 
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
-                Log.i(TAG, "-----------onScrolled-----------");
-                Log.i(TAG, "dy: $dy");
-                Log.i(TAG, "CHECK_SCROLL_UP: " + recyclerView.canScrollVertically(1));
-                Log.i(TAG, "CHECK_SCROLL_DOWN: " + recyclerView.canScrollVertically(-1));
+                RYLog.i(TAG, "-----------onScrolled-----------");
+                RYLog.i(TAG, "dy: $dy");
+                RYLog.i(TAG, "CHECK_SCROLL_UP: " + recyclerView.canScrollVertically(1));
+                RYLog.i(TAG, "CHECK_SCROLL_DOWN: " + recyclerView.canScrollVertically(-1));
             }
         })
     }

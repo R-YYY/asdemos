@@ -3,13 +3,12 @@ package com.example.rydemos
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import com.airbnb.lottie.LottieCompositionFactory
-import com.airbnb.lottie.LottieDrawable
-import com.airbnb.lottie.model.LottieCompositionCache
-import com.bumptech.glide.Glide
 import com.example.rydemos.databinding.ActivityMainBinding
+import com.example.rydemos.gifdemo.GifActivity
 import com.example.rydemos.imagedemo.ImageActivity
+import com.example.rydemos.motiondemo.MotionActivity
 import com.example.rydemos.scaledemo.ScaleActivity
+import com.example.rydemos.videodemo.VideoActivity
 
 
 class MainActivity : ComponentActivity() {
@@ -32,6 +31,21 @@ class MainActivity : ComponentActivity() {
         mBinding.btnScale.setOnClickListener {
             val intent = Intent()
             intent.setClass(this, ScaleActivity::class.java)
+            startActivity(intent)
+        }
+        mBinding.btnGif.setOnClickListener {
+            val intent = Intent()
+            intent.setClass(this, GifActivity::class.java)
+            startActivity(intent)
+        }
+        mBinding.btnMotion.setOnClickListener {
+            val intent = Intent()
+            intent.setClass(this, MotionActivity::class.java)
+            startActivity(intent)
+        }
+        mBinding.btnVideo.setOnClickListener {
+            val intent = Intent()
+            intent.setClass(this, VideoActivity::class.java)
             startActivity(intent)
         }
     }

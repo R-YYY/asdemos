@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ryDemos</string>
     <string name="test_string">测试的数据啊！！！</string>
+    <string name="scale_demo">scale demo</string>
+    <string name="image_demo">image_demo</string>
+    <string name="gif_demo">gif_demo</string>
+    <string name="motion_demo">motion_demo</string>
+    <string name="video_demo">video_demo</string>
 </resources>

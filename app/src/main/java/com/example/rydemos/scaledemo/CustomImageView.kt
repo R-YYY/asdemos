@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.Matrix
 import android.util.AttributeSet
 import android.widget.ImageView
-import com.example.rydemos.Utils
+import com.example.rydemos.util.Utils
 import kotlin.math.min
 
 class CustomImageView : ImageView {

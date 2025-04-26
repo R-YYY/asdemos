@@ -16,6 +16,7 @@ import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.request.transition.Transition
 import com.example.rydemos.MainActivity
 import com.example.rydemos.databinding.ActivityGifBinding
+import com.example.rydemos.util.RYLog
 
 
 class GifActivity : ComponentActivity() {
@@ -51,7 +52,7 @@ class GifActivity : ComponentActivity() {
                     target: Target<GifDrawable>,
                     isFirstResource: Boolean
                 ): Boolean {
-                    Log.e(MainActivity.TAG, "onLoadFailed error: ${e?.message}")
+                    RYLog.e(MainActivity.TAG, "onLoadFailed error: ${e?.message}")
                     return false
                 }
             })
@@ -103,7 +104,7 @@ class GifActivity : ComponentActivity() {
                     target: Target<Drawable>,
                     isFirstResource: Boolean
                 ): Boolean {
-                    Log.e(MainActivity.TAG, "onLoadFailed error: ${e?.message}")
+                    RYLog.e(MainActivity.TAG, "onLoadFailed error: ${e?.message}")
                     return false
                 }
 

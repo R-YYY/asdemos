@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btn_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转"/>
+        android:text="@string/image_demo" />
 
     <Button
         android:id="@+id/btn_scale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sclae demo"/>
+        android:text="@string/scale_demo" />
+
+    <Button
+        android:id="@+id/btn_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gif_demo" />
+
+    <Button
+        android:id="@+id/btn_motion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motion_demo" />
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/video_demo" />
 
 </LinearLayout>

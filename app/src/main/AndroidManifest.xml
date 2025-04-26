@@ -5,15 +5,16 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RYDemo"
-        android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
@@ -28,23 +29,27 @@
         <activity
             android:name=".TestActivity"
             android:exported="false"
-            android:theme="@style/Theme.RYDemo">
-        </activity>
+            android:theme="@style/Theme.RYDemo" />
         <activity
             android:name=".motiondemo.MotionActivity"
             android:exported="false"
-            android:theme="@style/Theme.RYDemo">
-        </activity>
+            android:theme="@style/Theme.RYDemo" />
         <activity
             android:name=".imagedemo.ImageActivity"
             android:exported="false"
-            android:theme="@style/Theme.RYDemo">
-        </activity>
+            android:theme="@style/Theme.RYDemo" />
         <activity
             android:name=".scaledemo.ScaleActivity"
             android:exported="false"
-            android:theme="@style/Theme.RYDemo">
-        </activity>
+            android:theme="@style/Theme.RYDemo" />
+        <activity
+            android:name=".gifdemo.GifActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RYDemo" />
+        <activity
+            android:name=".videodemo.VideoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RYDemo" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.rydemos
+package com.example.rydemos.util
 
 import android.text.TextUtils
 import android.view.View
